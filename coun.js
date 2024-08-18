@@ -90,7 +90,7 @@ function ansOption() {
     if (this.innerHTML == ans) {
         this.style.color = "green";
         console.log("matching");
-        score += 10;
+        score += 5;
         numm.disabled = true;
         nummm.disabled = true;
         nu.disabled = true;
@@ -105,12 +105,30 @@ function ansOption() {
         }, 2000);
         let correctAudio = new Audio("./music/correctAns.mp3");
         correctAudio.play();
-        if (score == 20) {
+        if (score >= 100 && score <= 104) {
+            stopQuestionGeneration();
+            let hunderedAudio = new Audio("./music/hundredComplete.mp3");
+            setTimeout(() => {
+                hunderedAudio.play();
+                setTimeout(() => {
+                    startQuestionGeneration();
+                }, 3000);
+            }, 2000);
+        } else if (50 <= score && score <= 54) {
             let fiftyAudio = new Audio("./music/fiftyComplete.mp3");
             setTimeout(() => {
                 fiftyAudio.play();
             }, 2000);
         }
+        // switch (score) {
+        //     case 50:
+
+        //         break;
+        //     case 100:
+
+        //     default:
+        //         break;
+        // }
     }
     else {
         this.style.color = "red";
@@ -167,8 +185,9 @@ function countDown() {
             }
         } else {
             clearInterval(timer);
-            console.log("Time's up!");
+            // console.log("Time's up!");
             document.getElementById("timing").innerHTML = "";
+            document.getElementById("timing").style.color = "";
         };
     }, 1000);
 }
