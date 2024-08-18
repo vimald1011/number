@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="countd.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="titleBar">
+            <h2>Addition</h2>
+            <div class="forScore">
+                <p>Addition upto 10 numbers</p>
+                <p class="widthp">score: <span id="score">0</span></p>
+                <p class="widthp"><span id="timing"></span></p>
+            </div>
+        </div>
+        <div class="exampleBar">
+            <div class="example">
+                <p>Example:</p>
+            </div>
+            <div class="ex1">
+                <p>3 + 3 = 6</p>
+            </div>
+            <div class="ex2">
+                <p>4 + 1 = 5</p>
+            </div>
+        </div>
+        <div class="quesBar">
+            <div class="qques">
+                <h2 class="qquesHeading">Let's Practice with some questions:</h2>
+            </div>
+            <div class="qquesBar">
+                <div class="queSec">
+                    <div class="queBt">
+                        <button id="queBtn">Generate Question</button>
+                    </div>
+                    <div class="queDis">
+                        <div class="num1">
+                            <p id="firstN"></p>
+                        </div>
+                        <div class="sign">
+                            <p id="plush"></p>
+                        </div>
+                        <div class="num2">
+                            <p id="secoundN"></p>
+                        </div>
+                    </div>
+                    <div class="queRes">
+                        <p class="resShow">there are result</p>
+                    </div>
+                </div>
+                <div class="ansSec">
+                    <div class="ansShow">
+                        <button id="queResBtn">a</button>
+                    </div>
+                    <div class="ansInp">
+                        <button id="inputBox">b</button>
+                    </div>
+                    <div class="ansSub">
+                        <button id="ansSubBtn">c</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="coun.js"></script>
+</body>
+
+</html>

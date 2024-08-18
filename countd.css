@@ -1,0 +1,269 @@
+:root {
+    --main: #F2F1EB;
+    --bar: #88AB8E;
+    --subBar: #AFC8AD;
+    --subBarSub: #EEE7DA;
+    --bodycolor: #607274;
+}
+
+/* pending to add css for better look */
+
+* {
+    margin: 0;
+    padding: 0;
+    border-radius: 10px;
+}
+
+body {
+    background-color: var(--bodycolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main {
+    background-color: var(--main);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 98%;
+    width: 95%;
+}
+
+.titleBar {
+    background-color: var(--bar);
+    height: 15%;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.widthp {
+    width: 150px;
+}
+
+.forScore {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25%;
+    padding-right: 5%;
+    background-color: var(--bodycolor);
+}
+
+
+.exampleBar {
+    background-color: var(--bar);
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.example {
+    background-color: var(--subBar);
+    height: 95%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
+    color: #fff;
+}
+.ex1 {
+    background-color: var(--subBar);
+    height: 95%;
+    width:35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    font-size: xx-large;
+    color: #fff;
+}
+.ex2 {
+    background-color: var(--subBar);
+    height: 95%;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    font-size: xx-large;
+    color: #fff;
+}
+
+.quesBar {
+    background-color: var(--bar);
+    height: 65%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.qques {
+    background-color: var(--subBarSub);
+    height: 10%;
+    width: 95%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-wrap: wrap;
+}
+
+.qquesHeading {
+    color: var(--bodycolor);
+    font-size: xx-large;
+    padding-left: 5%;
+}
+
+.qquesBar {
+    background-color: var(--subBarSub);
+    height: 85%;
+    width: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.queSec {
+    background-color: var(--bodycolor);
+    height: 95%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.queBt {
+    background-color: var(--bar);
+    height: 15%;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#queBtn {
+    width: 150px;
+    height: 43px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.queDis {
+    background-color: var(--bar);
+    height: 40%;
+    width: 95%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.num1, .num2 {
+    background-color: var(--subBar);
+    height: 80%;
+    width: 35%;
+    font-size: 4em;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign {
+    background-color: var(--subBar);
+    height: 80%;
+    width: 20%;
+    font-size: 4em;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.queRes {
+    background-color: var(--bar);
+    height: 30%;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resShow {
+    font-size: xx-large;
+    font-weight: 900;
+    color: #fff;
+}
+
+
+.ansSec {
+    background-color: var(--bodycolor);
+    height: 95%;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.ansShow {
+    background-color: var(--bar);
+    height: 30%;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#queResBtn {
+    width: 150px;
+    height: 90px;
+    font-size: 3em;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.ansInp {
+    background-color: var(--bar);
+    height: 30%;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inputBox {
+    width: 150px;
+    height: 90px;
+    font-size: 3em;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+
+
+.ansSub {
+    background-color: var(--bar);
+    height: 30%;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ansSubBtn {
+    width: 150px;
+    height: 90px;
+    font-size: 3em;
+    font-weight: 800;
+    cursor: pointer;
+}
